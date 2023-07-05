@@ -33,7 +33,28 @@ header{
     text-decoration: none;
     padding: 10px 20px;
     font-size: 20px;
+    position: relative;
     color: white;
+}
+
+.menu a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid indianred;
+    transition: 0.4s linear;
+}
+
+.menu a:hover::before{
+    width: 90%;
+}
+
+.register a:hover{
+    background: transparent;
+    border: 2px solid indianred;
 }
 
 .register a{
@@ -43,4 +64,35 @@ header{
     color: white;
     background-color: indianred;
     border-radius: 10px;
+}
+
+.head{
+    max-width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+    color: white;
+}
+
+.head span{
+    letter-spacing: 5px;
+}
+
+.head h1{
+    font-size: 3.5em;
+}
+
+.head a{
+    text-decoration: none;
+    background-color: indianred;
+    color: white;
+    padding: 10px 20px;
+    letter-spacing: 5px;
+}
+
+.head a:hover{
+    background: transparent;
+    border: 2px solid indianred;
 }
